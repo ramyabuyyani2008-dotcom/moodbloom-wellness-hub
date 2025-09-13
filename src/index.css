@@ -50,10 +50,17 @@ All colors MUST be HSL.
     --mood-poor: 25 60% 45%;
     --mood-terrible: 0 50% 45%;
 
+    /* Purple and Teal gradient colors */
+    --purple-soft: 280 60% 85%;
+    --teal-soft: 180 50% 80%;
+    --purple-dark: 280 40% 20%;
+    --teal-dark: 180 30% 25%;
+
     /* Gradients */
+    --gradient-background: linear-gradient(135deg, hsl(var(--purple-soft)), hsl(var(--teal-soft)));
     --gradient-wellness: linear-gradient(135deg, hsl(var(--wellness-calm)), hsl(var(--primary)));
     --gradient-mood: linear-gradient(90deg, hsl(var(--mood-excellent)), hsl(var(--mood-good)), hsl(var(--mood-okay)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--wellness-calm)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, rgba(255,255,255,0.1) 100%);
 
     --radius: 0.5rem;
 
@@ -119,6 +126,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(135deg, hsl(280 60% 85%), hsl(180 50% 80%));
+    min-height: 100vh;
   }
 }
