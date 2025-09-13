@@ -47,6 +47,20 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        wellness: {
+          calm: "hsl(var(--wellness-calm))",
+          energy: "hsl(var(--wellness-energy))",
+          focus: "hsl(var(--wellness-focus))",
+          balance: "hsl(var(--wellness-balance))",
+          stress: "hsl(var(--wellness-stress))",
+        },
+        mood: {
+          excellent: "hsl(var(--mood-excellent))",
+          good: "hsl(var(--mood-good))",
+          okay: "hsl(var(--mood-okay))",
+          poor: "hsl(var(--mood-poor))",
+          terrible: "hsl(var(--mood-terrible))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
